@@ -13,7 +13,6 @@ module.exports.getAll = (req, res) => {
     });
 };
 
-
 // WHY IS THIS COMMENTED OUT? BECAUSE REDIS IS HANDLING IT?
 
 // module.exports.create = (req, res) => {
@@ -85,6 +84,7 @@ module.exports.update = (req, res) => {
       res.sendStatus(404);
     });
 };
+
 
 module.exports.getProfilesByList2 = (req, res) => {
 //  knex.raw('SELECT profiles.* FROM (SELECT ? AS user UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ? UNION ALL SELECT ?) list LEFT JOIN profiles ON list.user = profiles.id;', [7,3,1,3,5,2,5,2,8,8])
