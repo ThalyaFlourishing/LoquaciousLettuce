@@ -33,8 +33,8 @@ module.exports.getOne = (req, res) => {  // [ R ]
 module.exports.create = (req, res) => {  // [ C ]
   console.log('bodyyyy---', req.body);
   models.Game.forge({
-    profile_id: req.body.profile_id,
-    song_id: req.body.song_id,
+    profile_id: req.body.profileId,
+    song_id: 1,
     score: req.body.score,
     difficulty: req.body.difficulty,
 
